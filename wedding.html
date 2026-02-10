@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Omkar & Sneha Wedding</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        scroll-behavior: smooth;
+      }
+
+      header {
+        height: 100vh;
+        background: url("https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=1500&q=80")
+          center/cover no-repeat;
+        position: relative;
+        color: white;
+        text-align: center;
+      }
+      header .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+      }
+      header .text-center {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      nav {
+        background: rgba(255, 255, 255, 0.9);
+      }
+      nav a {
+        font-weight: 600;
+        color: #6b1e1e;
+      }
+
+      section {
+        padding: 60px 0;
+      }
+
+      /* Couple section */
+      #couple {
+        background: #fff8e1;
+      }
+      .couple-photo {
+        width: 230px;
+        height: 230px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 6px solid #ffcc00;
+        margin: auto;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+      }
+      .couple-center-text {
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: #d84315;
+      }
+
+      /* Events */
+      .event-card {
+        border-left: 4px solid #d84315;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      /* RSVP */
+      #rsvp input,
+      #rsvp textarea {
+        border-radius: 0;
+      }
+
+      /* Gallery */
+      .gallery-img {
+        height: 200px;
+        object-fit: cover;
+        transition: transform 0.3s;
+      }
+      .gallery-img:hover {
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#home">Wedding</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#couple">Couple</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#events">Events</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#rsvp">RSVP</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <header id="home">
+      <div class="overlay"></div>
+      <div class="text-center text-white">
+        <h1 class="display-4 fw-bold">Omkar ❤️ Sneha</h1>
+        <p class="lead">12 December 2026 | Pune, Maharashtra</p>
+      </div>
+    </header>
+
+    <!-- Couple Section -->
+    <section id="couple">
+      <div class="container text-center">
+        <h2 class="fw-bold mb-4">Our Journey</h2>
+        <div class="row align-items-center">
+          <div class="col-md-5">
+            <img
+              src="https://images.unsplash.com/photo-1544005313-94ddf0286df2"
+              class="couple-photo mb-3"
+            />
+            <h5>Sneha</h5>
+          </div>
+          <div class="col-md-2 couple-center-text">Together</div>
+          <div class="col-md-5">
+            <img
+              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e"
+              class="couple-photo mb-3"
+            />
+            <h5>Omkar</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-5">Wedding Events</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="p-4 event-card">
+              <h5>Haldi</h5>
+              <p>10 Dec • 9:00 AM</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-4 event-card">
+              <h5>Sakharpuda</h5>
+              <p>11 Dec • 4:00 PM</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-4 event-card">
+              <h5>Wedding Ceremony</h5>
+              <p>12 Dec • 11:00 AM</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RSVP Section -->
+    <section id="rsvp" class="bg-light">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-4">RSVP</h2>
+        <form class="row g-3">
+          <div class="col-md-6">
+            <input type="text" class="form-control" placeholder="Your Name" />
+          </div>
+          <div class="col-md-6">
+            <input type="email" class="form-control" placeholder="Your Email" />
+          </div>
+          <div class="col-12">
+            <textarea
+              class="form-control"
+              rows="3"
+              placeholder="Message (optional)"
+            ></textarea>
+          </div>
+          <div class="col-12 text-center">
+            <button class="btn btn-primary">Send RSVP</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-4">Gallery</h2>
+        <div class="row g-3">
+          <div class="col-md-4">
+            <img
+              src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e"
+              class="gallery-img w-100"
+            />
+          </div>
+          <div class="col-md-4">
+            <img
+              src="https://images.unsplash.com/photo-1502620691451-a2f3adb4779f"
+              class="gallery-img w-100"
+            />
+          </div>
+          <div class="col-md-4">
+            <img
+              src="https://images.unsplash.com/photo-1522337660859-02fbefca4702"
+              class="gallery-img w-100"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-center py-3 bg-dark text-white">
+      With Blessings & Love ❤️
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

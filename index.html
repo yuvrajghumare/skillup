@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday My Love 💖</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<canvas id="bgCanvas"></canvas>
+
+<!-- INTRO SCREEN -->
+<div id="intro" class="intro">
+  <h1>For The Most Beautiful Soul 💖</h1>
+  <div id="count">5</div>
+</div>
+
+<!-- PASSWORD SCREEN -->
+<div id="passwordScreen" class="password">
+  <div class="password-box">
+    <h2>Enter Our Secret Code 🔐</h2>
+    <input type="password" id="passInput" placeholder="Enter code">
+    <button onclick="unlock()">Unlock My Heart 💘</button>
+    <p id="error"></p>
+  </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div id="main" class="hidden">
+
+<nav>
+  <div class="logo">💎 My Princess</div>
+  <div>
+    <button onclick="toggleMusic()">🎵</button>
+    <button onclick="fireworks()">🎆</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Happy Birthday 👑</h1>
+  <p>You are my peace, my magic, my forever 💕</p>
+</section>
+
+<!-- WHY SHE IS SPECIAL -->
+<section class="glass section">
+  <h2>Why You Are Special 🌸</h2>
+  <p>
+    Your smile lights up my world.  
+    Your voice calms my storms.  
+    Your love makes life magical.
+  </p>
+</section>
+
+<!-- WORLD CLASS SLIDESHOW -->
+<section class="section">
+  <h2>Our Beautiful Journey 💞</h2>
+
+  <div class="slideshow">
+
+    <div class="slides active">
+      <img src="https://picsum.photos/1200/700?love1">
+      <div class="caption">The day you changed my world 💖</div>
+    </div>
+
+    <div class="slides">
+      <img src="https://picsum.photos/1200/700?love2">
+      <div class="caption">Every moment with you feels magical ✨</div>
+    </div>
+
+    <div class="slides">
+      <img src="https://picsum.photos/1200/700?love3">
+      <div class="caption">My forever happiness 🌸</div>
+    </div>
+
+    <button class="prev" onclick="changeSlide(-1)">❮</button>
+    <button class="next" onclick="changeSlide(1)">❯</button>
+
+    <div class="dots">
+      <span onclick="goToSlide(0)" class="dot active-dot"></span>
+      <span onclick="goToSlide(1)" class="dot"></span>
+      <span onclick="goToSlide(2)" class="dot"></span>
+    </div>
+
+  </div>
+</section>
+
+<!-- LOVE LETTER -->
+<section class="glass section">
+  <h2>My Love Letter 💌</h2>
+  <p id="typing"></p>
+</section>
+
+<!-- PROPOSAL BUTTON -->
+<div class="center">
+  <button id="proposalBtn" class="romantic-btn hidden" onclick="openProposal()">
+    I Have Something Important 💍
+  </button>
+</div>
+
+<footer>
+  Forever Yours ❤️
+</footer>
+
+</div>
+
+<!-- PROPOSAL MODAL -->
+<div id="proposal" class="proposal">
+  <div class="proposal-content">
+    <div class="ring">💍</div>
+    <h2>Will You Stay With Me Forever? 💖</h2>
+    <button onclick="sayYes()">Yes, Always 💕</button>
+  </div>
+</div>
+
+<!-- MUSIC -->
+<audio id="music" loop>
+<source src="https://www.bensound.com/bensound-music/bensound-romantic.mp3">
+</audio>
+
+<script src="script.js"></script>
+
+</body>
+</html>
